@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkEntryBuffer" id="entry_buffer">
+    <signal name="inserted-text" handler="on_entry_buffer_inserted_text" swapped="no"/>
+  </object>
+  <object class="GtkEntry" id="entry">
+    <property name="visible">True</property>
+    <property name="can_focus">True</property>
+    <property name="buffer">entry_buffer</property>
+    <property name="visibility">False</property>
+    <property name="invisible_char">●</property>
+    <property name="secondary_icon_name">tails-locked</property>
+    <property name="input_purpose">password</property>
+    <signal name="backspace" handler="on_entry_backspace" swapped="no"/>
+    <signal name="delete-from-cursor" handler="on_entry_delete_from_cursor" swapped="no"/>
+    <signal name="icon-press" handler="on_entry_icon_press" swapped="no"/>
+    <signal name="icon-release" handler="on_entry_icon_release" swapped="no"/>
+    <signal name="move-cursor" handler="on_entry_move_cursor" swapped="no"/>
+  </object>
+</interface>
